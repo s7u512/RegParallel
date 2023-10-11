@@ -173,7 +173,7 @@ RegParallel <- function(
   }
 
   # detect if incorrect FUNtype selected
-  if (!any((FUNtype %in% c('glm', 'lm', 'coxph', 'clogit', 'bayesglm')) == TRUE)) {
+  if (!any((FUNtype %in% c('glm', 'lm', 'coxph', 'clogit', 'bayesglm', 'svyglm')) == TRUE)) {
     stop('FUNtype not recognised. Choose one of glm, lm, coxph, ',
       'clogit, or bayesglm')
   }
